@@ -19,6 +19,7 @@
     "react-helmet": "^5.2.0"
   },
   "devDependencies": {
+    "flow-bin": "^0.94.0",
     "prettier": "^1.16.4"
   },
   "keywords": [
@@ -28,6 +29,7 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
+    "flow": "flow",
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
