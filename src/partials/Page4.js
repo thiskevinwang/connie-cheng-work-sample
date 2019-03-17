@@ -1,8 +1,12 @@
 import * as React from "react"
-import { partials, rightPage, pageTabLow } from "../shared/styles"
+import {
+  partials,
+  rightPage,
+  pageTabLow,
+  MARGIN,
+  TEXTSTYLE,
+} from "../shared/styles"
 import { COLLAGE } from "../images/Page4-collage"
-
-const MARGIN = 30
 
 export default function Page4() {
   return (
@@ -39,7 +43,7 @@ export default function Page4() {
 }
 
 const TEXT = (
-  <div style={{ fontSize: 9.7, lineHeight: 1 }}>
+  <div style={TEXTSTYLE}>
     I had been a part of the design team since the schematic design phase,
     during which I worked on materials for presentations and developed the 3D
     model in Revit.

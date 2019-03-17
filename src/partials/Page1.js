@@ -1,12 +1,16 @@
 import * as React from "react"
-import { partials, leftPage, pageTabHigh } from "../shared/styles"
+import {
+  partials,
+  leftPage,
+  pageTabHigh,
+  MARGIN,
+  TEXTSTYLE,
+} from "../shared/styles"
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 // import Image from "../components/image"
 import { SWEEP } from "../images/Page1-sweep"
 import { MDF } from "../images/Page1-mdf"
-
-const MARGIN = 30
 
 export default function Page1() {
   return (
@@ -51,7 +55,7 @@ export default function Page1() {
 }
 
 const TEXT = (
-  <div style={{ fontSize: 9.7, lineHeight: 1 }}>
+  <div style={TEXTSTYLE}>
     The Sweep <br />
     Yunnan Province, China
     <br />
@@ -72,7 +76,7 @@ const TEXT = (
     Hong Kong Faculty of Architecture
     <br />
     <br />
-    •••••••••••••••••••••••••••••••••••••••
+    ····································································
     <br />
     <br />
     For this design-build project, I assisted the designers and project manager

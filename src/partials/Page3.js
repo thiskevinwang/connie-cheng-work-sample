@@ -1,9 +1,13 @@
 import * as React from "react"
-import { partials, leftPage, pageTabLow } from "../shared/styles"
+import {
+  partials,
+  leftPage,
+  pageTabLow,
+  MARGIN,
+  TEXTSTYLE,
+} from "../shared/styles"
 import { COLLAGE } from "../images/Page3-collage"
 import { RESIDENCE } from "../images/Page3-residence"
-
-const MARGIN = 30
 
 export default function Page3() {
   return (
@@ -43,7 +47,7 @@ export default function Page3() {
 }
 
 const TEXT = (
-  <div style={{ fontSize: 9.7, lineHeight: 1 }}>
+  <div style={TEXTSTYLE}>
     CDE Residence Hall <br />
     Williams College, Massachusetts
     <br />
@@ -60,7 +64,7 @@ const TEXT = (
     White Architects.
     <br />
     <br />
-    •••••••••••••••••••••••••••••••••••••••
+    ····································································
     <br />
     <br />
     The Center for Development Economics (CDE) at Williams College offers a one

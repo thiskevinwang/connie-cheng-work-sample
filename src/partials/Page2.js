@@ -1,11 +1,15 @@
 import * as React from "react"
-import { partials, rightPage, pageTabHigh } from "../shared/styles"
+import {
+  partials,
+  rightPage,
+  pageTabHigh,
+  MARGIN,
+  TEXTSTYLE,
+} from "../shared/styles"
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import { PERSPECTIVE } from "../images/Page2-perspective"
 import { PINCH } from "../images/Page2-pinch"
-
-const MARGIN = 30
 
 export default function Page2() {
   return (
@@ -50,7 +54,7 @@ export default function Page2() {
 }
 
 const TEXT = (
-  <div style={{ fontSize: 9.7, lineHeight: 1 }}>
+  <div style={TEXTSTYLE}>
     The Pinch <br />
     Yunnan Province, China
     <br />
@@ -71,7 +75,7 @@ const TEXT = (
     Hong Kong Faculty of Architecture
     <br />
     <br />
-    •••••••••••••••••••••••••••••••••••••••
+    ····································································
     <br />
     <br />I worked closely with one of the designers on developing the shelving
     layout for the Pinch. This involved countless iterations and testing in
