@@ -29,7 +29,8 @@ export default function Page1() {
           left: 0,
           marginLeft: MARGIN,
           marginRight: MARGIN,
-          paddingTop: 100,
+          marginTop: MARGIN,
+          paddingTop: 70,
         }}
       >
         <div className="image" style={{ width: `70%` }}>
