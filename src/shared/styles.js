@@ -1,10 +1,18 @@
+export const MARGIN = 30
+export const TEXTSTYLE = { fontSize: 10, lineHeight: 1.1 }
+
 export const partials = {
+  fontFamily: "GENISO",
+  color: "black",
+  fontWeight: "bold",
   display: "flex",
   flexDirection: "column",
   minWidth: 375,
   minHeight: 515.625,
+  maxHeight: `calc(100vh - 20px)`,
   height: `calc(100% - 20px)`,
-  background: "#F1F7FC",
+  // background: "#F1F7FC",
+  background: "white",
 }
 
 export const leftPage = {
