@@ -27,7 +27,12 @@ const Layout = ({ children }) => (
       <>
         {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
         {children}
-        <footer>© {new Date().getFullYear()} foobarfooter</footer>
+        <div style={{ position: "fixed", color: "lightgray", fontSize: 12 }}>
+          site built by:{" "}
+          <a style={{ color: "lightgray" }} href="https://www.thekevinwang.com">
+            @thekevinwang
+          </a>
+        </div>
       </>
     )}
   />
