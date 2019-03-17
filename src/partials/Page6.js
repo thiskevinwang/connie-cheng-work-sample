@@ -7,7 +7,7 @@ import {
   TEXTSTYLE,
 } from "../shared/styles"
 import { SCOOTER } from "../images/Page6-scooter"
-import { HAMMOCK } from "../images/Page6-HAMMOCK"
+import { HAMMOCK } from "../images/Page6-hammock"
 import { BALL } from "../images/Page6-ball"
 import { FLOORPLAN } from "../images/Page6-floorplan"
 
