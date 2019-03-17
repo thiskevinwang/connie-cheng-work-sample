@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { Link } from "gatsby"
 import { Parallax, ParallaxLayer } from "react-spring/renderprops-addons"
 import { isMobile } from "react-device-detect"
@@ -18,10 +18,42 @@ import Page6 from "../partials/Page6"
 import Page7 from "../partials/Page7"
 import Page8 from "../partials/Page8"
 
-const IndexPage = () => {
-  let [page, setPage] = useState(0)
+const PAGES = [0, 1, 2, 3, 4, 5]
+// ---------------1-23-45-67-89-10
 
+const IndexPage = () => {
+  const [page, setPage] = useState(0)
   let parallax
+
+  const onClickRight = () => {
+    const nextPage = PAGES[PAGES.indexOf(page) + 1] || 0
+    parallax.scrollTo(nextPage)
+    setPage(nextPage)
+  }
+
+  const onClickLeft = () => {
+    const previousPage =
+      PAGES[PAGES.indexOf(page) - 1] === 0
+        ? 0
+        : PAGES[PAGES.indexOf(page) - 1] || 5
+    parallax.scrollTo(previousPage)
+    setPage(previousPage)
+  }
+
+  useEffect(() => {
+    document.title = `CHENG | ${
+      page == 0
+        ? "title"
+        : page == 5
+        ? "end"
+        : page + PAGES.indexOf(page) - 1 + " - " + (page + PAGES.indexOf(page))
+    }`
+    document.onkeydown = e => {
+      e.key == "ArrowRight" && onClickRight()
+      e.key == "ArrowLeft" && onClickLeft()
+    }
+  })
+
   return (
     <Layout>
       <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
@@ -114,7 +146,6 @@ const IndexPage = () => {
           factor={isMobile ? 1 : 0.5}
         >
           <BlankPage />
-          <span onClick={() => parallax.scrollTo(3.2)}>scroll to 3.2</span>
         </ParallaxLayer>
 
         <ParallaxLayer
@@ -123,7 +154,6 @@ const IndexPage = () => {
           factor={isMobile ? 1 : 0.5}
         >
           <BlankPage />
-          <span onClick={() => parallax.scrollTo(0)}>scroll to 0</span>
         </ParallaxLayer>
       </Parallax>
     </Layout>
