@@ -20,7 +20,7 @@ export default function TitlePage() {
             alignItems: "center",
           }}
         >
-          <div style={{ display: "flex" }}>CONNIE CHENG</div>
+          <div style={{ display: "flex", fontSize: 24 }}>CONNIE CHENG</div>
           <div style={{ display: "flex" }}>work sample</div>
         </div>
       </div>
