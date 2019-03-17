@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `CONNIE CHENG`,
     description: `work sample`,
-    author: `@gatsbyjs`,
+    author: `@thekevinwang`,
   },
   plugins: [
     `gatsby-plugin-flow`,
