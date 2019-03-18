@@ -78,6 +78,8 @@ const IndexPage = () => {
         </ParallaxLayer>
 
         <ParallaxLayer
+          onScroll={e => e.stopPropagation()}
+          style={{ overflowY: "scroll" }}
           offset={isMobile ? 1 : 1}
           speed={0.5}
           factor={isMobile ? 1 : 0.5}
@@ -86,6 +88,8 @@ const IndexPage = () => {
         </ParallaxLayer>
 
         <ParallaxLayer
+          onScroll={e => e.stopPropagation()}
+          style={{ overflowY: "scroll" }}
           offset={isMobile ? 2 : 1.5}
           speed={1}
           factor={isMobile ? 1 : 0.5}
@@ -94,6 +98,8 @@ const IndexPage = () => {
         </ParallaxLayer>
 
         <ParallaxLayer
+          onScroll={e => e.stopPropagation()}
+          style={{ overflowY: "scroll" }}
           offset={isMobile ? 3 : 2}
           speed={0.5}
           factor={isMobile ? 1 : 0.5}
@@ -102,6 +108,8 @@ const IndexPage = () => {
         </ParallaxLayer>
 
         <ParallaxLayer
+          onScroll={e => e.stopPropagation()}
+          style={{ overflowY: "scroll" }}
           offset={isMobile ? 4 : 2.5}
           speed={1}
           factor={isMobile ? 1 : 0.5}
@@ -110,6 +118,8 @@ const IndexPage = () => {
         </ParallaxLayer>
 
         <ParallaxLayer
+          onScroll={e => e.stopPropagation()}
+          style={{ overflowY: "scroll" }}
           offset={isMobile ? 5 : 3}
           speed={0.5}
           factor={isMobile ? 1 : 0.5}
@@ -118,6 +128,8 @@ const IndexPage = () => {
         </ParallaxLayer>
 
         <ParallaxLayer
+          onScroll={e => e.stopPropagation()}
+          style={{ overflowY: "scroll" }}
           offset={isMobile ? 6 : 3.5}
           speed={1}
           factor={isMobile ? 1 : 0.5}
@@ -126,6 +138,8 @@ const IndexPage = () => {
         </ParallaxLayer>
 
         <ParallaxLayer
+          onScroll={e => e.stopPropagation()}
+          style={{ overflowY: "scroll" }}
           offset={isMobile ? 7 : 4}
           speed={0.5}
           factor={isMobile ? 1 : 0.5}
@@ -134,6 +148,8 @@ const IndexPage = () => {
         </ParallaxLayer>
 
         <ParallaxLayer
+          onScroll={e => e.stopPropagation()}
+          style={{ overflowY: "scroll" }}
           offset={isMobile ? 8 : 4.5}
           speed={1}
           factor={isMobile ? 1 : 0.5}
