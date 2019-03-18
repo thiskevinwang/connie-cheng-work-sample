@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react"
 import { Link } from "gatsby"
 import { Parallax, ParallaxLayer } from "react-spring/renderprops-addons"
-import { isMobile } from "react-device-detect"
+import { isBrowser, isMobile } from "react-device-detect"
 
 import Layout from "../components/layout"
 // import Image from "../components/image"
@@ -18,8 +18,7 @@ import Page6 from "../partials/Page6"
 import Page7 from "../partials/Page7"
 import Page8 from "../partials/Page8"
 
-const PAGES = [0, 1, 2, 3, 4, 5]
-// ---------------1-23-45-67-89-10
+const PAGES = isMobile ? [0, 1, 2, 3, 4, 5, 6, 7, 8] : [0, 1, 2, 3, 4]
 
 const IndexPage = () => {
   const [page, setPage] = useState(0)
@@ -35,7 +34,7 @@ const IndexPage = () => {
     const previousPage =
       PAGES[PAGES.indexOf(page) - 1] === 0
         ? 0
-        : PAGES[PAGES.indexOf(page) - 1] || 5
+        : PAGES[PAGES.indexOf(page) - 1] || PAGES.length - 1
     parallax.scrollTo(previousPage)
     setPage(previousPage)
   }
@@ -59,17 +58,19 @@ const IndexPage = () => {
       <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
 
       <Parallax
-        pages={isMobile ? 12 : 6}
+        pages={PAGES.length}
         scrolling={true}
         horizontal
         ref={ref => (parallax = ref)}
       >
-        <ParallaxLayer offset={0} speed={0} factor={isMobile ? 1 : 0.5}>
-          <BlankPage />
-        </ParallaxLayer>
+        {isBrowser && (
+          <ParallaxLayer offset={0} speed={0} factor={isMobile ? 1 : 0.5}>
+            <BlankPage />
+          </ParallaxLayer>
+        )}
 
         <ParallaxLayer
-          offset={isMobile ? 1 : 0.5}
+          offset={isMobile ? 0 : 0.5}
           speed={1}
           factor={isMobile ? 1 : 0.5}
         >
@@ -77,7 +78,7 @@ const IndexPage = () => {
         </ParallaxLayer>
 
         <ParallaxLayer
-          offset={isMobile ? 2 : 1}
+          offset={isMobile ? 1 : 1}
           speed={0.5}
           factor={isMobile ? 1 : 0.5}
         >
@@ -85,7 +86,7 @@ const IndexPage = () => {
         </ParallaxLayer>
 
         <ParallaxLayer
-          offset={isMobile ? 3 : 1.5}
+          offset={isMobile ? 2 : 1.5}
           speed={1}
           factor={isMobile ? 1 : 0.5}
         >
@@ -93,7 +94,7 @@ const IndexPage = () => {
         </ParallaxLayer>
 
         <ParallaxLayer
-          offset={isMobile ? 4 : 2}
+          offset={isMobile ? 3 : 2}
           speed={0.5}
           factor={isMobile ? 1 : 0.5}
         >
@@ -101,7 +102,7 @@ const IndexPage = () => {
         </ParallaxLayer>
 
         <ParallaxLayer
-          offset={isMobile ? 5 : 2.5}
+          offset={isMobile ? 4 : 2.5}
           speed={1}
           factor={isMobile ? 1 : 0.5}
         >
@@ -109,7 +110,7 @@ const IndexPage = () => {
         </ParallaxLayer>
 
         <ParallaxLayer
-          offset={isMobile ? 6 : 3}
+          offset={isMobile ? 5 : 3}
           speed={0.5}
           factor={isMobile ? 1 : 0.5}
         >
@@ -117,7 +118,7 @@ const IndexPage = () => {
         </ParallaxLayer>
 
         <ParallaxLayer
-          offset={isMobile ? 7 : 3.5}
+          offset={isMobile ? 6 : 3.5}
           speed={1}
           factor={isMobile ? 1 : 0.5}
         >
@@ -125,7 +126,7 @@ const IndexPage = () => {
         </ParallaxLayer>
 
         <ParallaxLayer
-          offset={isMobile ? 8 : 4}
+          offset={isMobile ? 7 : 4}
           speed={0.5}
           factor={isMobile ? 1 : 0.5}
         >
@@ -133,14 +134,14 @@ const IndexPage = () => {
         </ParallaxLayer>
 
         <ParallaxLayer
-          offset={isMobile ? 9 : 4.5}
+          offset={isMobile ? 8 : 4.5}
           speed={1}
           factor={isMobile ? 1 : 0.5}
         >
           <Page8 />
         </ParallaxLayer>
 
-        <ParallaxLayer
+        {/* <ParallaxLayer
           offset={isMobile ? 10 : 5}
           speed={0.5}
           factor={isMobile ? 1 : 0.5}
@@ -154,7 +155,7 @@ const IndexPage = () => {
           factor={isMobile ? 1 : 0.5}
         >
           <BlankPage />
-        </ParallaxLayer>
+        </ParallaxLayer> */}
       </Parallax>
     </Layout>
   )
