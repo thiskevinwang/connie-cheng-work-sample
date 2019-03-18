@@ -2,7 +2,7 @@ export const MARGIN = 30
 export const TEXTSTYLE = { fontSize: 10, lineHeight: 1.1 }
 
 export const partials = {
-  fontFamily: "GENISO",
+  fontFamily: `'GENISO', sans-serif`,
   color: "black",
   fontWeight: "bold",
   display: "flex",

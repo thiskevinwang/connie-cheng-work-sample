@@ -1,4 +1,7 @@
-@import url(//db.onlinewebfonts.com/c/4aab67e6126386079dc1549704d8d746?family=GENISO);
+@font-face {
+  font-family: 'GENISO';
+  src:  url('../shared/geniso.ttf')
+}
 
 html {
   font-family: sans-serif;
