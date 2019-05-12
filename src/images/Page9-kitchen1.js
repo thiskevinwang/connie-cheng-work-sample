@@ -2,7 +2,7 @@ import * as React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-export const KITCHEN1 = (
+export default (
   <StaticQuery
     query={graphql`
       query {

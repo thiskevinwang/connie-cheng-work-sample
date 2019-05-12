@@ -6,7 +6,7 @@ import {
   MARGIN,
   TEXTSTYLE,
 } from "../shared/styles"
-import { MODEL } from "../images/Page8-model"
+import { Page8_model } from "../images"
 
 export default function Page8() {
   return (
@@ -29,7 +29,7 @@ export default function Page8() {
         }}
       >
         <div className="image" style={{ width: `80%` }}>
-          {MODEL}
+          {Page8_model}
         </div>
       </div>
 

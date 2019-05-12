@@ -6,7 +6,7 @@ import {
   MARGIN,
   TEXTSTYLE,
 } from "../shared/styles"
-import { REECE } from "../images/Page5-reece"
+import { Page5_reece } from "../images"
 
 export default function Page5() {
   return (
@@ -29,7 +29,7 @@ export default function Page5() {
         }}
       >
         <div className="image" style={{ width: `70%` }}>
-          {REECE}
+          {Page5_reece}
         </div>
         <div className="text" style={{ width: `30%`, marginLeft: MARGIN }}>
           {TEXT}

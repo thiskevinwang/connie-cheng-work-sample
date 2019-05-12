@@ -6,8 +6,7 @@ import {
   MARGIN,
   TEXTSTYLE,
 } from "../shared/styles"
-import { MODEL1 } from "../images/Page7-model1"
-import { MODEL2 } from "../images/Page7-model2"
+import { Page7_model1, Page7_model2 } from "../images"
 
 export default function Page7() {
   return (
@@ -30,8 +29,8 @@ export default function Page7() {
         }}
       >
         <div className="image" style={{ width: `50%` }}>
-          <div className="row">{MODEL1}</div>
-          <div className="row">{MODEL2}</div>
+          <div className="row">{Page7_model1}</div>
+          <div className="row">{Page7_model2}</div>
         </div>
         <div className="text" style={{ width: `30%`, marginLeft: MARGIN }}>
           {TEXT}

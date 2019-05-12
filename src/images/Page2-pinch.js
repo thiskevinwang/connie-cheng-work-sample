@@ -2,7 +2,7 @@ import * as React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-export const PINCH = (
+export default (
   <StaticQuery
     query={graphql`
       query {

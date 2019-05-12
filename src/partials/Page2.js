@@ -8,8 +8,7 @@ import {
 } from "../shared/styles"
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-import { PERSPECTIVE } from "../images/Page2-perspective"
-import { PINCH } from "../images/Page2-pinch"
+import { Page2_perspective, Page2_pinch } from "../images"
 
 export default function Page2() {
   return (
@@ -40,13 +39,13 @@ export default function Page2() {
           {TEXT}
         </div>
         <div className="image" style={{ width: `70%`, marginRight: MARGIN }}>
-          {PERSPECTIVE}
+          {Page2_perspective}
         </div>
       </div>
 
       <div className="row" style={{ margin: 0 }}>
         <div className="image" style={{}}>
-          {PINCH}
+          {Page2_pinch}
         </div>
       </div>
     </div>

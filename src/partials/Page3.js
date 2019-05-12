@@ -6,8 +6,7 @@ import {
   MARGIN,
   TEXTSTYLE,
 } from "../shared/styles"
-import { COLLAGE } from "../images/Page3-collage"
-import { RESIDENCE } from "../images/Page3-residence"
+import { Page3_collage, Page3_residence } from "../images"
 
 export default function Page3() {
   return (
@@ -19,7 +18,7 @@ export default function Page3() {
 
       <div className="row" style={{ marginTop: MARGIN }}>
         <div className="image" style={{}}>
-          {COLLAGE}
+          {Page3_collage}
         </div>
       </div>
 
@@ -36,7 +35,7 @@ export default function Page3() {
         }}
       >
         <div className="image" style={{ width: `60%` }}>
-          {RESIDENCE}
+          {Page3_residence}
         </div>
         <div className="text" style={{ width: `40%`, marginLeft: MARGIN }}>
           {TEXT}

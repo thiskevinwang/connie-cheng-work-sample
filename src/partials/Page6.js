@@ -6,10 +6,12 @@ import {
   MARGIN,
   TEXTSTYLE,
 } from "../shared/styles"
-import { SCOOTER } from "../images/Page6-scooter"
-import { HAMMOCK } from "../images/Page6-hammock"
-import { BALL } from "../images/Page6-ball"
-import { FLOORPLAN } from "../images/Page6-floorplan"
+import {
+  Page6_scooter,
+  Page6_hammock,
+  Page6_ball,
+  Page6_floorplan,
+} from "../images"
 
 export default function Page6() {
   return (
@@ -39,10 +41,10 @@ export default function Page6() {
           className="image"
           style={{ width: `22%`, height: `15%`, marginRight: MARGIN }}
         >
-          {SCOOTER}
+          {Page6_scooter}
         </div>
         <div className="image" style={{ width: `22%`, height: `25%` }}>
-          {HAMMOCK}
+          {Page6_hammock}
         </div>
       </div>
 
@@ -56,7 +58,7 @@ export default function Page6() {
         }}
       >
         <div className="image" style={{ width: `75%`, height: `25%` }}>
-          {FLOORPLAN}
+          {Page6_floorplan}
         </div>
       </div>
 
@@ -76,7 +78,7 @@ export default function Page6() {
           {TEXT}
         </div>
         <div className="image" style={{ width: `22%` }}>
-          {BALL}
+          {Page6_ball}
         </div>
       </div>
     </div>

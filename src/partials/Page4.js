@@ -6,7 +6,7 @@ import {
   MARGIN,
   TEXTSTYLE,
 } from "../shared/styles"
-import { COLLAGE } from "../images/Page4-collage"
+import { Page4_collage } from "../images"
 
 export default function Page4() {
   return (
@@ -21,7 +21,7 @@ export default function Page4() {
 
       <div className="row" style={{ marginTop: MARGIN }}>
         <div className="image" style={{}}>
-          {COLLAGE}
+          {Page4_collage}
         </div>
       </div>
 

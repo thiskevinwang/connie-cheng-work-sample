@@ -9,8 +9,7 @@ import {
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 // import Image from "../components/image"
-import { SWEEP } from "../images/Page1-sweep"
-import { MDF } from "../images/Page1-mdf"
+import { Page1_sweep, Page1_mdf } from "../images"
 
 export default function Page1() {
   return (
@@ -38,7 +37,7 @@ export default function Page1() {
         }}
       >
         <div className="image" style={{ width: `70%` }}>
-          {SWEEP}
+          {Page1_sweep}
         </div>
         <div className="text" style={{ width: `30%`, marginLeft: MARGIN }}>
           {TEXT}
@@ -47,7 +46,7 @@ export default function Page1() {
 
       <div className="row" style={{ margin: MARGIN }}>
         <div className="image" style={{}}>
-          {MDF}
+          {Page1_mdf}
         </div>
       </div>
     </div>
