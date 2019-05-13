@@ -17,8 +17,10 @@ import Page5 from "../partials/Page5"
 import Page6 from "../partials/Page6"
 import Page7 from "../partials/Page7"
 import Page8 from "../partials/Page8"
+import Page9 from "../partials/Page9"
+import Page10 from "../partials/Page10"
 
-const PAGES = isMobile ? [0, 1, 2, 3, 4, 5, 6, 7, 8] : [0, 1, 2, 3, 4]
+const PAGES = isMobile ? [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10] : [0, 1, 2, 3, 4, 5]
 
 const IndexPage = () => {
   const [page, setPage] = useState(0)
@@ -155,6 +157,25 @@ const IndexPage = () => {
           factor={isMobile ? 1 : 0.5}
         >
           <Page8 />
+        </ParallaxLayer>
+
+        <ParallaxLayer
+          onScroll={e => e.stopPropagation()}
+          style={{ overflowY: "scroll" }}
+          offset={isMobile ? 9 : 5}
+          speed={0.5}
+          factor={isMobile ? 1 : 0.5}
+        >
+          <Page9 />
+        </ParallaxLayer>
+        <ParallaxLayer
+          onScroll={e => e.stopPropagation()}
+          style={{ overflowY: "scroll" }}
+          offset={isMobile ? 10 : 5.5}
+          speed={1}
+          factor={isMobile ? 1 : 0.5}
+        >
+          <Page10 />
         </ParallaxLayer>
 
         {/* <ParallaxLayer

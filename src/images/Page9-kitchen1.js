@@ -8,7 +8,7 @@ export default (
       query {
         placeholderImage: file(relativePath: { eq: "Page9-kitchen1.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 900) {
+            fluid(maxWidth: 630, maxHeight: 557) {
               ...GatsbyImageSharpFluid
             }
           }

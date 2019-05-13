@@ -27,8 +27,6 @@ export default function Page3() {
         style={{
           display: "flex",
           flexDirection: "row",
-          top: 0,
-          left: 0,
           marginLeft: MARGIN,
           marginRight: MARGIN,
           marginTop: MARGIN,

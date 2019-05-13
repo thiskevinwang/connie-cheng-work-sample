@@ -10,7 +10,7 @@ export const partials = {
   minWidth: 375,
   maxWidth: 720,
   minHeight: 515.625,
-  maxHeigh: 931.76,
+  maxHeight: 931.76,
   maxHeight: `calc(100vh - 20px)`,
   height: `calc(100% - 20px)`,
   // background: "#F1F7FC",

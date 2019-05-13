@@ -30,8 +30,6 @@ export default function Page4() {
         style={{
           display: "flex",
           flexDirection: "row",
-          top: 0,
-          left: 0,
         }}
       >
         <div className="text" style={{ width: `40%`, margin: MARGIN }}>
