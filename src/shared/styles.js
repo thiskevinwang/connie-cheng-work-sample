@@ -8,7 +8,7 @@ export const partials = {
   display: "flex",
   flexDirection: "column",
   minWidth: 375,
-  maxWidth: 720,
+  maxWidth: 900,
   minHeight: 515.625,
   maxHeight: 931.76,
   maxHeight: `calc(100vh - 20px)`,
